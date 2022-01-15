@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask Image</title>
+<style>
+body {
+	background: #000;
+}
+.body {
+	background: #000;
+	}
+.wrapper {
+    width: 900px;
+    height: 450px;
+	border: none;
+	background: #111;
+	box-sizing: border-box;
+	margin: 7% auto;
+	padding: 100px 375px;
+	}
+.icon {
+  margin: 0 0;
+  width: 100px;
+  height: 100px;
+  background: white;
+  display: inline-block;
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+  mask-image: url("https://upload.wikimedia.org/wikipedia/commons/8/81/Octicons-link-external.svg");
+  -webkit-mask-image: url("https://upload.wikimedia.org/wikipedia/commons/8/81/Octicons-link-external.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  -webkit-transition:  background-color 1s;
+			transition: background-color 1s;
+}
+.icon:hover,
+.icon:focus {
+	cursor: pointer;
+  background-color: #CC5678;
+  -webkit-transition:  background-color 1s;
+			transition: background-color 1s;
+}
+.mask {
+  margin: 50px;
+  width: 100px;
+  height: 100px;
+  background: white;
+  display: inline-block;
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+  mask-image: url("https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg");
+  -webkit-mask-image: url("https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  -webkit-transition:  background-color 1s, -webkit-transform 2s;
+			transition: background-color 1s, transform 2s;
+}
+.mask:hover,
+.mask:focus {
+	cursor: pointer;
+  background-color: tomato;
+  -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  -webkit-transition:  background-color 1s, -webkit-transform 2s;
+			transition: background-color 1s, transform 2s;
+}
+</style>
+</head>
+
+<body class="body">
+
+<div class="wrapper">
+	<div>
+	  <span class="icon"></span>
+	</div>
+
+	<div>
+	  <span class="mask"></span>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Image</title>
+<style>
+body {
+	background: #000;
+	}
+.body {
+	background: #000;
+	}
+.video-player-wrapper {
+    width: 900px;
+    height: 450px;
+	border: 2px solid #bdae82;
+	background: #111;
+	margin: 7% auto;
+	}
+.player-button-block{
+    width: 130px;
+    height: 130px;
+    position: relative;
+    display: inline-block;
+	text-align: center;
+    top: 160px;
+    left: 385px;
+    padding: 0 0;
+    border: none;
+    margin: 0 0;
+    border-radius: 50%;
+	background: none;
+	}
+#player-button-tag {
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    padding: 0 0;
+    border: none;
+    margin: 0 0;
+    border-radius: 50%;
+	background: none;
+	box-sizing: content-box;
+	}
+#player-button-img {
+	z-index: 100;
+    width: 130px;
+    height: 130px;
+    margin: 0 0;
+    border: none;
+    padding: 0 0;
+	background: white;
+	border-radius: 50%;
+	display: inline-block;
+	mask-image: url("https://rolling-scopes-school.github.io/junproger-JSFEPRESCHOOL/portfolio/assets/svg/play-hover.svg");
+	-webkit-mask-image: url("https://rolling-scopes-school.github.io/junproger-JSFEPRESCHOOL/portfolio/assets/svg/play-hover.svg");
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+	mask-size: contain;
+	-webkit-mask-size: contain;
+    -webkit-transition: background 1s, -webkit-transform 2s;
+            transition: background 1s, transform 2s;
+	}
+#player-button-img:hover {
+	cursor: pointer;
+	background: #bdae82;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition: background 1s, -webkit-transform 2s;
+            transition: background 1s, transform 2s;
+	}
+</style>
+</head>
+
+<body class="body">
+
+                <div class="video-player-wrapper">
+                    <div class="player-button-block">
+                        <button id="player-button-tag" type="button">
+							<span id="player-button-img"></span>
+						</button>
+                    </div>
+                </div>
+
+</body>
+</html>
