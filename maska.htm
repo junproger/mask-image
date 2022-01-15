@@ -19,12 +19,12 @@ body {
 	background: #111;
 	box-sizing: border-box;
 	margin: 7% auto;
-	padding: 100px 375px;
+	padding: 90px 375px;
 	}
 .icon {
   margin: 0 0;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 110px;
   background: white;
   display: inline-block;
   mask-mode: alpha;
@@ -35,15 +35,17 @@ body {
   -webkit-mask-repeat: no-repeat;
   mask-size: cover;
   -webkit-mask-size: cover;
-  -webkit-transition:  background-color 1s;
-			transition: background-color 1s;
+  -webkit-transition:  background-color 1s, -webkit-transform 2s;
+			transition: background-color 1s, transform 2s;
 }
 .icon:hover,
 .icon:focus {
 	cursor: pointer;
   background-color: #CC5678;
-  -webkit-transition:  background-color 1s;
-			transition: background-color 1s;
+  -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  -webkit-transition:  background-color 1s, -webkit-transform 2s;
+			transition: background-color 1s, transform 2s;
 }
 .mask {
   margin: 50px;
